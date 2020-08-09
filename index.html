@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rokwon's blog and Portfolio">
+    <meta name="author" content="Rokwon">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b997d43bda.js" crossorigin="anonymous"></script>
+    <!-- google fonts font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/my_favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Codu</title>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav id="navbar">
+			<div class="navbar__logo">
+				<i class="fab fa_diaspora"></i>
+				<a href="#">Rokwon</a>
+			</div>
+
+			<div class="navbar__menu">
+				<ul class="navbar__menu">
+					<li class="navbar__menu__item">Home</li>
+					<li class="navbar__menu__item">About</li>
+					<li class="navbar__menu__item">Skills</li>
+					<li class="navbar__menu__item">My work</li>
+					<li class="navbar__menu__item">Testimonials</li>
+					<li class="navbar__menu__item">Contact</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Home -->
+		<section id="home">
+			<img src="images/picture.jpg" alt="Rokwon's photo" class="homm__avatar" />
+
+			<h1 class="home__title">
+				Hello,<br> I'm Rokwon
+			</h1>
+
+			<h2 id="home__description">
+				A Software Engineer that realist dreaming of an ideal
+			</h2>
+
+			<button class="home__contact">Contact Me</button>
+
+		</section>
+
+		<!-- About -->
+		<section id="about">
+			<h1>About me</h1>
+			<p>
+				소프트웨어 개발에 대한 모든 것을 좋아합니다.
+			</p>
+			<div class="about__majors">
+
+				<div class="major">
+					<div class="major__icon">
+						<i class="fab fa-html5"></i>
+					</div>
+					<div class="major__title">
+						Front-end
+					</div>
+					<div class="major__description">
+						HTML, CSS, JavaScript, TypeScript<br>React
+					</div>
+				</div>
+
+				<div class="major">
+					<div class="major__icon">
+						<i class="fas fa-mobile"></i>
+					</div>
+					<div class="major__title">
+						Mobile
+					</div>
+					<div class="major__description">
+						IOS, React Native, Swift
+					</div>
+				</div>
+
+				<div class="major">
+					<div class="major__icon">
+						<i class="fas fa-server"></i>
+					</div>
+					<div class="major__title">
+						Back-end
+					</div>
+					<div class="major__description">
+						Node.js, Rest APIs
+					</div>
+				</div>
+
+				<!-- 학교 및 어느 회사 다녔는지 -->
+
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section id="skills">
+			<h1>Skills</h1>
+			<h2>SKills && Attributes</h2>
+			<p>
+				새로운 거 배우는 것을 아주 좋아합니다.
+			</p>
+
+			<div class="skillset">
+				<div class="skillset__left">
+					<h3 class="skillset__title">Skills</h3>
+
+					<div class="skill">
+						<div class="skill_description">
+							<span>HTML</span>
+							<span>99%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+
+					<!-- .skill들 만들기 -->
+				</div>
+
+				<div class="skillset__right">
+					<div class="tools">
+						<h3 class="skillset__title">Tools</h3>
+						<ul class="tools__list">
+							<li><span>Visual Studio Code</span></li>
+							<li><span>Android Studio</span></li>
+							<li><span>iOS development tools</span></li>
+						</ul>
+					</div>
+
+					<div class="etc">
+						<h3 class="skillset__title">Etc</h3>
+						<ul class="ect__list">
+							<li><span>Git</span></li>
+							<li><span>Jira</span></li>
+							<li><span>Firebase</span></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Work -->
+		<section id="work">
+			<h1>My work</h1>
+			<h3>Projects</h3>
+			<div class="work__categories">
+				<button class="category__btn">
+					All <span class="category__count">3</span>
+				</button>
+				<button class="category__btn">
+					Front-end<span class="category__count">1</span>
+				</button>
+				<button class="category__btn">
+					Mobile<span class="category__count">1</span>
+				</button>
+				<button class="category__btn">
+					Back-end<span class="category__count">1</span>
+				</button>
+			</div>
+
+			<div class="work__projects">
+				<!-- git hub연결 -->
+				<a 
+					href="https://github.com/RokwonK/Bonbangsasu"
+					class="project"
+					target="blank"
+				>
+					<img src="images/my_favicon.png" alt="github" class="project__img">
+					<div class="project__description">
+						<h3>Github Site</h3>
+						<span>Use React-Native</span>
+					</div>
+				</a>
+
+				<!-- a 태그 걸어서 git hub 연결하기 -->
+
+			</div>
+		</section>
+
+		<!-- Testimonials 
+		<section id="testimonials"></section>
+		-->
+		
+		<!-- Contact -->
+		<section id="cont">
+			<h1 class="contact__title">
+				Talk
+			</h1>
+			<h2 class="contact__email">
+				wonrok97@naver.com
+			</h2>
+			<div class="contact__links">
+				<a href="https://github.com/RokwonK" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+			<p class="contact__rights">2020 Rokwon - All rights reserved</p>
+		</section>
+			
+	</body>
+</html>
