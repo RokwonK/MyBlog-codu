@@ -21,3 +21,10 @@ HTML, CSS, 바닐라js을 이용해 내 블로그와 포트폴리오를 만들�
 - 2020년 8월 9일   
     - favicon 완성
     - Porfolio Page - HTML 완성
+
+<br>
+
+- 2020년 8월 10일
+    - Home 테마 이미지 완성
+    - Home, About, Skills파트 CSS 기본 커버 완성
+    

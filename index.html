@@ -7,7 +7,7 @@
     <meta name="author" content="Rokwon">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b997d43bda.js" crossorigin="anonymous"></script>
-    <!-- google fonts font-family: 'Roboto', sans-serif; -->
+    <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="images/my_favicon.png" />
@@ -20,31 +20,32 @@
 		<!-- Navbar -->
 		<nav id="navbar">
 			<div class="navbar__logo">
-				<i class="fab fa_diaspora"></i>
+				<i class="fab fa-diaspora"></i>
 				<a href="#">Rokwon</a>
 			</div>
 
 			<div class="navbar__menu">
 				<ul class="navbar__menu">
-					<li class="navbar__menu__item">Home</li>
+					<li class="navbar__menu__item active">Home</li>
 					<li class="navbar__menu__item">About</li>
 					<li class="navbar__menu__item">Skills</li>
-					<li class="navbar__menu__item">My work</li>
+					<li class="navbar__menu__item">Projects</li>
 					<li class="navbar__menu__item">Testimonials</li>
 					<li class="navbar__menu__item">Contact</li>
+					<li class="navbar__menu__item">Blog</li>
 				</ul>
 			</div>
 		</nav>
 
 		<!-- Home -->
 		<section id="home">
-			<img src="images/picture.jpg" alt="Rokwon's photo" class="homm__avatar" />
+			<img src="images/picture.jpg" alt="Rokwon's photo" class="home__avatar" />
 
 			<h1 class="home__title">
 				Hello,<br> I'm Rokwon
 			</h1>
 
-			<h2 id="home__description">
+			<h2 class="home__description">
 				A Software Engineer that realist dreaming of an ideal
 			</h2>
 
@@ -53,10 +54,10 @@
 		</section>
 
 		<!-- About -->
-		<section id="about">
+		<section id="about" class="section section__container">
 			<h1>About me</h1>
 			<p>
-				소프트웨어 개발에 대한 모든 것을 좋아합니다.
+				소프트웨어 개발에 대한 모든 것을 좋아합니다. 조잘조잘~
 			</p>
 			<div class="about__majors">
 
@@ -64,9 +65,9 @@
 					<div class="major__icon">
 						<i class="fab fa-html5"></i>
 					</div>
-					<div class="major__title">
+					<h2 class="major__title">
 						Front-end
-					</div>
+					</h2>
 					<div class="major__description">
 						HTML, CSS, JavaScript, TypeScript<br>React
 					</div>
@@ -76,9 +77,9 @@
 					<div class="major__icon">
 						<i class="fas fa-mobile"></i>
 					</div>
-					<div class="major__title">
+					<h2 class="major__title">
 						Mobile
-					</div>
+					</h2>
 					<div class="major__description">
 						IOS, React Native, Swift
 					</div>
@@ -88,70 +89,123 @@
 					<div class="major__icon">
 						<i class="fas fa-server"></i>
 					</div>
-					<div class="major__title">
+					<h2 class="major__title">
 						Back-end
-					</div>
+					</h2>
 					<div class="major__description">
 						Node.js, Rest APIs
 					</div>
 				</div>
 
 				<!-- 학교 및 어느 회사 다녔는지 -->
-
 			</div>
 		</section>
 
 		<!-- Skills -->
-		<section id="skills">
-			<h1>Skills</h1>
-			<h2>SKills && Attributes</h2>
-			<p>
-				새로운 거 배우는 것을 아주 좋아합니다.
-			</p>
+		<section id="skills" class="section">
+			<div class="section__container">
+				<h1>Skills</h1>
+				<h2>SKills && Attributes</h2>
+				<p>
+					새로운 거 배우는 것을 아주 좋아합니다.
+				</p>
 
-			<div class="skillset">
-				<div class="skillset__left">
-					<h3 class="skillset__title">Skills</h3>
+				<div class="skillset">
+					<div class="skillset__left">
+						<h3 class="skillset__title">Skills</h3>
 
-					<div class="skill">
-						<div class="skill_description">
-							<span>HTML</span>
-							<span>99%</span>
+						<div class="skill">
+							<div class="skill__description">
+								<span>HTML</span>
+								<span>90%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:90%;"></div>
+							</div>
 						</div>
-						<div class="skill__bar">
-							<div class="skill__value"></div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>CSS</span>
+								<span>80%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:80%;"></div>
+							</div>
+						</div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>JavaScript</span>
+								<span>85%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:85%;"></div>
+							</div>
+						</div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>C++</span>
+								<span>50%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:50%;"></div>
+							</div>
+						</div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>Swift</span>
+								<span>10%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:10%;"></div>
+							</div>
+						</div>
+
+						<div class="skill">
+							<div class="skill__description">
+								<span>node.js</span>
+								<span>80%</span>
+							</div>
+							<div class="skill__bar">
+								<div class="skill__value" style="width:80%;"></div>
+							</div>
+						</div>
+
+						<!-- .skill들 만들기 -->
+					</div>
+
+					<div class="skillset__right">
+						<div class="tools">
+							<h3 class="skillset__title">Tools</h3>
+							<ul class="tools__list">
+								<li><span>Visual Studio Code</span></li>
+								<li><span>Android Studio</span></li>
+								<li><span>iOS development tools</span></li>
+							</ul>
+						</div>
+
+						<div class="etc">
+							<h3 class="skillset__title">Etc</h3>
+							<ul class="ect__list">
+								<li><span>Git</span></li>
+								<li><span>Jira</span></li>
+								<li><span>Firebase</span></li>
+								<li><span>MongoDB</span></li>
+								<li><span>Mysql</span></li>
+							</ul>
 						</div>
 					</div>
 
-					<!-- .skill들 만들기 -->
 				</div>
-
-				<div class="skillset__right">
-					<div class="tools">
-						<h3 class="skillset__title">Tools</h3>
-						<ul class="tools__list">
-							<li><span>Visual Studio Code</span></li>
-							<li><span>Android Studio</span></li>
-							<li><span>iOS development tools</span></li>
-						</ul>
-					</div>
-
-					<div class="etc">
-						<h3 class="skillset__title">Etc</h3>
-						<ul class="ect__list">
-							<li><span>Git</span></li>
-							<li><span>Jira</span></li>
-							<li><span>Firebase</span></li>
-						</ul>
-					</div>
-				</div>
-
 			</div>
 
 		</section>
 
 		<!-- Work -->
-		<section id="work">
+		<section id="work" class="section">
 			<h1>My work</h1>
 			<h3>Projects</h3>
 			<div class="work__categories">
@@ -193,7 +247,7 @@
 		-->
 		
 		<!-- Contact -->
-		<section id="cont">
+		<section id="cont" class="section">
 			<h1 class="contact__title">
 				Talk
 			</h1>
