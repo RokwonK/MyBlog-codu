@@ -108,8 +108,16 @@ button {
 }
 
 .navbar__logo {
+    display: flex;
     font-size : var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    margin-left : 10px;
+    line-height: 60px;
+}
+
+.navbar__favicon{
+    width : 60px;
+
 }
 
 .navbar__menu__item {
