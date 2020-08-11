@@ -10,8 +10,16 @@
     <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/my_favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/png" href="images/my_favicon.png" />
+	<link rel="stylesheet" href="main_css/basic.css" />
+	<link rel="stylesheet" href="main_css/about.css" />
+	<link rel="stylesheet" href="main_css/contact.css" />
+	<link rel="stylesheet" href="main_css/home.css" />
+	<link rel="stylesheet" href="main_css/navbar.css" />
+	<link rel="stylesheet" href="main_css/skills.css" />
+	<link rel="stylesheet" href="main_css/work.css" />
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+
     <script src="main.js" defer></script>
     <title>Codu</title>
 	</head>
@@ -35,6 +43,12 @@
 					<li class="navbar__menu__item">Blog</li>
 				</ul>
 			</div>
+
+			<!-- Toggle -->
+			<button class="navbar__toggle-btn">
+				<i class="fas fa-bars" ></i>
+			</button>
+
 		</nav>
 
 		<!-- Home -->
@@ -206,39 +220,53 @@
 
 		<!-- Work -->
 		<section id="work" class="section">
-			<h1>My work</h1>
-			<h3>Projects</h3>
-			<div class="work__categories">
-				<button class="category__btn">
-					All <span class="category__count">3</span>
-				</button>
-				<button class="category__btn">
-					Front-end<span class="category__count">1</span>
-				</button>
-				<button class="category__btn">
-					Mobile<span class="category__count">1</span>
-				</button>
-				<button class="category__btn">
-					Back-end<span class="category__count">1</span>
-				</button>
-			</div>
+			<div class="section__container">
+				<h1>My work</h1>
+				<h3>Projects</h3>
+				<div class="work__categories">
+					<button class="category__btn active" >
+						All <span class="category__count">3</span>
+					</button>
+					<button class="category__btn">
+						Front-end<span class="category__count">1</span>
+					</button>
+					<button class="category__btn">
+						Mobile<span class="category__count">1</span>
+					</button>
+					<button class="category__btn">
+						Back-end<span class="category__count">1</span>
+					</button>
+				</div>
 
-			<div class="work__projects">
-				<!-- git hub연결 -->
-				<a 
-					href="https://github.com/RokwonK/Bonbangsasu"
-					class="project"
-					target="blank"
-				>
-					<img src="images/my_favicon.png" alt="github" class="project__img">
-					<div class="project__description">
-						<h3>Github Site</h3>
-						<span>Use React-Native</span>
-					</div>
-				</a>
+				<div class="work__projects">
+					<!-- git hub연결 -->
+					<a 
+						href="https://github.com/RokwonK/Bonbangsasu"
+						class="project"
+						target="blank"
+					>
+						<img src="images/bonbangsasu.jpg" alt="github" class="project__img">
+						<div class="project__description">
+							<h3>Project</h3>
+							<span>Use React-Native</span>
+						</div>
+					</a>
 
-				<!-- a 태그 걸어서 git hub 연결하기 -->
+					<a 
+						href="https://github.com/RokwonK/MyBlog-codu"
+						class="project"
+						target="blank"
+					>
+						<img src="images/myweb.png" alt="github" class="project__img">
+						<div class="project__description">
+							<h3>Project</h3>
+							<span>Use HTML,CSS,JS</span>
+						</div>
+					</a>
 
+					<!-- a 태그 걸어서 git hub 연결하기 -->
+
+				</div>
 			</div>
 		</section>
 
@@ -247,9 +275,9 @@
 		-->
 		
 		<!-- Contact -->
-		<section id="cont" class="section">
+		<section id="contact" class="section">
 			<h1 class="contact__title">
-				Talk
+				Contact me
 			</h1>
 			<h2 class="contact__email">
 				wonrok97@naver.com
