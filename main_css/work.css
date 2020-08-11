@@ -12,7 +12,7 @@
 
 .category__btn.active,
 .category__btn:hover {
-    background-color: var(--color-grren);
+    background-color: var(--color-green);
     color : var(--color-white);
 }
 
@@ -42,6 +42,12 @@
     /* 화면에 꽉차면 밑으로 내려가도록 */
     flex-wrap : wrap;
     justify-content: center;
+    opacity : 1;
+    transition: all var(--animation--duration) ease-out;
+}
+.work__projects.ani-out {
+    opacity: 0;
+    transform: scale(0.97) translateY(40px);
 }
 
 .project {
@@ -53,6 +59,10 @@
     margin: 2px;
     position : relative;
     background-color: var(--clolor-light-white);   
+}
+
+.project.invisible {
+    display : none;
 }
 
 .project__img {

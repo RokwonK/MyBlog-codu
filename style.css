@@ -4,7 +4,7 @@
     --clolor-light-white : #eeeeee;
     --color-dark-white : #bdbdbd;
 
-    --color-grren : #00cc00;
+    --color-green : #00cc00;
     --color-light-green : #99ff99;
     --color-dark-green :#00b300;
 
@@ -34,4 +34,17 @@
 
     /* Animation */
     --animation--duration : 300ms;
+}
+
+.up {
+    position: fixed;
+    right : 30px;
+    bottom : 30px;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    color : var(--color-white);
+    background-color: var(--color-green);
+    border-radius: var(--size-border-redius);
+    opacity: 0;
 }

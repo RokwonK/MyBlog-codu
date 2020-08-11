@@ -3,6 +3,7 @@
 #home {
     background: url('../images/back.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 

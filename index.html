@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rokwon's blog and Portfolio">
-    <meta name="author" content="Rokwon">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b997d43bda.js" crossorigin="anonymous"></script>
-    <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Rokwon's blog and Portfolio">
+		<meta name="author" content="Rokwon">
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/b997d43bda.js" crossorigin="anonymous"></script>
+		<!-- google fonts  -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-	<link rel="icon" type="image/png" href="images/my_favicon.png" />
-	<link rel="stylesheet" href="main_css/basic.css" />
-	<link rel="stylesheet" href="main_css/about.css" />
-	<link rel="stylesheet" href="main_css/contact.css" />
-	<link rel="stylesheet" href="main_css/home.css" />
-	<link rel="stylesheet" href="main_css/navbar.css" />
-	<link rel="stylesheet" href="main_css/skills.css" />
-	<link rel="stylesheet" href="main_css/work.css" />
-	<!-- <link rel="stylesheet" href="style.css" /> -->
+		<!-- part별 CSS -->
+		<link rel="icon" type="image/png" href="images/my_favicon.png" />
+		<link rel="stylesheet" href="main_css/basic.css" />
+		<link rel="stylesheet" href="main_css/about.css" />
+		<link rel="stylesheet" href="main_css/contact.css" />
+		<link rel="stylesheet" href="main_css/home.css" />
+		<link rel="stylesheet" href="main_css/navbar.css" />
+		<link rel="stylesheet" href="main_css/skills.css" />
+		<link rel="stylesheet" href="main_css/work.css" />
+		<link rel="stylesheet" href="style.css" />
 
-    <script src="main.js" defer></script>
-    <title>Codu</title>
+		<script src="main.js" defer></script>
+		<title>Codu</title>
 	</head>
 
 	<body>
@@ -34,13 +35,12 @@
 
 			<div class="navbar__menu">
 				<ul class="navbar__menu">
-					<li class="navbar__menu__item active">Home</li>
-					<li class="navbar__menu__item">About</li>
-					<li class="navbar__menu__item">Skills</li>
-					<li class="navbar__menu__item">Projects</li>
-					<li class="navbar__menu__item">Testimonials</li>
-					<li class="navbar__menu__item">Contact</li>
-					<li class="navbar__menu__item">Blog</li>
+					<li class="navbar__menu__item active" data-link="#home">Home</li>
+					<li class="navbar__menu__item" data-link="#about">About</li>
+					<li class="navbar__menu__item" data-link="#skills">Skills</li>
+					<li class="navbar__menu__item" data-link="#work">Projects</li>
+					<li class="navbar__menu__item" data-link="#contact">Contact</li>
+					<li class="navbar__menu__item" data-link="#home">Blog</li>
 				</ul>
 			</div>
 
@@ -224,16 +224,16 @@
 				<h1>My work</h1>
 				<h3>Projects</h3>
 				<div class="work__categories">
-					<button class="category__btn active" >
+					<button class="category__btn active" data-fillter="*">
 						All <span class="category__count">3</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-fillter="front-end">
 						Front-end<span class="category__count">1</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-fillter="mobile">
 						Mobile<span class="category__count">1</span>
 					</button>
-					<button class="category__btn">
+					<button class="category__btn" data-fillter="back-end">
 						Back-end<span class="category__count">1</span>
 					</button>
 				</div>
@@ -244,6 +244,7 @@
 						href="https://github.com/RokwonK/Bonbangsasu"
 						class="project"
 						target="blank"
+						data-type="front-end"
 					>
 						<img src="images/bonbangsasu.jpg" alt="github" class="project__img">
 						<div class="project__description">
@@ -256,6 +257,7 @@
 						href="https://github.com/RokwonK/MyBlog-codu"
 						class="project"
 						target="blank"
+						data-type="mobile"
 					>
 						<img src="images/myweb.png" alt="github" class="project__img">
 						<div class="project__description">
@@ -269,10 +271,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- Testimonials 
-		<section id="testimonials"></section>
-		-->
 		
 		<!-- Contact -->
 		<section id="contact" class="section">
@@ -290,5 +288,9 @@
 			<p class="contact__rights">2020 Rokwon - All rights reserved</p>
 		</section>
 			
+		<!-- Up to top -->
+		<button class="up">
+			<i class = "fas fa-arrow-up"></i>
+		</button>
 	</body>
 </html>

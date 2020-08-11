@@ -1,11 +1,55 @@
-@import url("../style.css");
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --clolor-light-white : #eeeeee;
+    --color-dark-white : #bdbdbd;
+    --color-green : #00cc00;
+    --color-light-green : #99ff99;
+    --color-dark-green :#00b300;
+    --color-dark-grey : #4d4d4d;
+    --color-grey : #616161;
+    --color-light-grey : #a6a6a6;
+    --color-blue : #73aace;
+    --color-yellow : #fff7d1;
+    --color-orange : #feb546;
+    --color-black : #000000;
+
+
+    /* Font size */
+    --font-large : 48px;
+    --font-medium : 28px;
+    --font-regular : 18px;
+    --font-small : 16px;
+    --font-micro : 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold : 600;
+    --weight-regular : 400;
+
+    /* Size */
+    --size-border-redius : 4px;
+
+    /* Animation */
+    --animation--duration : 300ms;
+}
 
 #navbar {
+    position: fixed;
+    width : 100%;
+
     display : flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-grren);
+    background-color: transparent;
     color: var(--color-white);
+    transition: background-color 500ms ease-in-out;
+    z-index: 1;
+}
+
+#navbar.navbar__dark {
+    background-color: var(--color-green);
 }
 
 .navbar__menu {
@@ -22,7 +66,6 @@
 
 .navbar__favicon{
     width : 60px;
-
 }
 
 .navbar__menu__item {
@@ -40,7 +83,7 @@
 }
 .navbar__toggle-btn{
     position : absolute;
-    top : 24px;
+    top : 16px;
     right : 32px;
     font-size: 24px;
     color: var(--color-white);

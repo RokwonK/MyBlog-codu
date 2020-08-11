@@ -22,7 +22,7 @@
     transition: all var(--animation--duration) ease;
 }
 .major__icon:hover i{
-    color : var(--color-grren);
+    color : var(--color-green);
     transform: scale(1.5);
 }
 .major__title,
