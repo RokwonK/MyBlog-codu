@@ -27,6 +27,7 @@ navbar_menu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
     if (link == null) return;
+    navbar_menu.classList.remove('active');
 
     scroll_to_view(link);
 })
@@ -42,11 +43,24 @@ const scroll_to_view = (selector) => {
     scroll_to.scrollIntoView({behavior : "smooth"});
 }
 
+//모바일 환경 메뉴 토글 버튼 클릭 시 (보이게 안보이게 설정)
+const toggle = document.querySelector(".navbar__toggle-btn");
+const mobile_menu = document.querySelector(".navbar__menu");
+
+toggle.addEventListener('click', () => {
+
+    let have = mobile_menu.classList.contains('active');
+    if (!have) mobile_menu.classList.add('active');
+    else mobile_menu.classList.remove('active');
+
+});
+
 //---------------------------------------------------------
 
 /* 
     Scroll시, Home 화면 점점 투명화 // 
 */
+
 
 const home = document.querySelector('#home');
 const home_height = home.getBoundingClientRect().height;
@@ -76,6 +90,12 @@ project_category_btn_group.addEventListener('click', (event) => {
     const fillter = event.target.dataset.fillter || event.target.parentNode.dataset.fillter;
     
     if (fillter == null) return;
+
+    //Remove active
+    const active = document.querySelector('.category__btn.active');
+    active.classList.remove('active');
+    const t = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+    t.classList.add('active');
     
     project_btn_group.classList.add('ani-out');
 
@@ -89,7 +109,13 @@ project_category_btn_group.addEventListener('click', (event) => {
         })
 
     },300)
-    
-
 
 })
+
+
+//---------------------------------------------------------
+
+/*
+    
+*/
+
