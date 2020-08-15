@@ -1,5 +1,6 @@
 'use strict'
 
+//-------------------------------------------------------
 
 /* 
     Navbar 스크롤에 따라 투명 => 색깔로
@@ -43,16 +44,16 @@ const scroll_to_view = (selector) => {
     scroll_to.scrollIntoView({behavior : "smooth"});
 }
 
-//모바일 환경 메뉴 토글 버튼 클릭 시 (보이게 안보이게 설정)
+/*
+    모바일 환경 메뉴 토글 버튼 클릭 시 (보이게 안보이게 설정)
+*/
 const toggle = document.querySelector(".navbar__toggle-btn");
 const mobile_menu = document.querySelector(".navbar__menu");
 
 toggle.addEventListener('click', () => {
-
     let have = mobile_menu.classList.contains('active');
     if (!have) mobile_menu.classList.add('active');
     else mobile_menu.classList.remove('active');
-
 });
 
 //---------------------------------------------------------
@@ -107,15 +108,34 @@ project_category_btn_group.addEventListener('click', (event) => {
             else
                 p.classList.add('invisible');
         })
-
     },300)
+})
 
+
+//---------------------------------------------------------
+
+/* 
+    Skills 항목에 도착 시 Skill들 %만큼 올라가기
+*/
+
+const skills = document.querySelector('#skills');
+const skills_height = skills.getBoundingClientRect().height;
+const skills_data = document.querySelectorAll(".skill__value");
+document.addEventListener('scroll', () => {
+    if (window.scrollY >= skills_height) {
+        skills_data.forEach(d => {  
+            d.style.width = `${parseInt(d.dataset.width)}%`;
+        })
+    }
+    else
+        skills_data.forEach(d => {  d.style.width = "0"; })
 })
 
 
 //---------------------------------------------------------
 
 /*
+    About 방향 조절해 보이는 화면 조절
     
 */
 

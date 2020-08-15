@@ -1,7 +1,7 @@
 @import url("../style.css");
 
 #skills {
-    background-color: var(--color-yellow);
+    background-color: var(--color-light-green);
 }
 
 .skillset {
@@ -33,10 +33,12 @@
     margin-bottom: 32px;
 }
 .skill__value {
-    width: 100%;
+    width: 0;
     height:3px;
     background-color: var(--color-orange);
+    transition: width 800ms ease;
 }
+
 
 .skillset__right {
     flex-basis : 40%;

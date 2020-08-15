@@ -53,65 +53,80 @@
 
 		<!-- Home -->
 		<section id="home">
-			<img src="images/picture.jpg" alt="Rokwon's photo" class="home__avatar" />
+			<div class= "home__back">
+				<div class="home__contents">
+					<h1 class="home__title">
+						Rokwon
+					</h1>
 
-			<h1 class="home__title">
-				Hello,<br> I'm Rokwon
-			</h1>
+					<h2 class="home__description">
+						A Software Engineer that realist dreaming of an ideal
+					</h2>
 
-			<h2 class="home__description">
-				A Software Engineer that realist dreaming of an ideal
-			</h2>
-
-			<button class="home__contact">Contact Me</button>
-
+					<button class="home__contact">Contact Me</button>
+					<br>
+					<img src="images/picture.jpg" alt="Rokwon's photo" class="home__avatar" />
+				</div>
+			</div>
 		</section>
 
 		<!-- About -->
-		<section id="about" class="section section__container">
+		<section id="about" class="section section__container" style="margin-top: 73px;">
 			<h1>About me</h1>
-			<p>
-				소프트웨어 개발에 대한 모든 것을 좋아합니다. 조잘조잘~
-			</p>
-			<div class="about__majors">
+			<div class="about__in">
+				<i class="fas fa-arrow-left"></i>
 
-				<div class="major">
-					<div class="major__icon">
-						<i class="fab fa-html5"></i>
-					</div>
-					<h2 class="major__title">
-						Front-end
-					</h2>
-					<div class="major__description">
-						HTML, CSS, JavaScript, TypeScript<br>React
+				<div class="about__intro">
+					<h2>소개글</h2>
+					<p>
+						소프트웨어 개발에 대한 모든 것을 좋아합니다. 조잘조잘~
+					</p>
+				</div>
+
+				<div class="about__intro active">
+					<h2>개발 기술</h2>
+					<div class="about__majors">
+						<div class="major">
+							<div class="major__icon">
+								<i class="fab fa-html5"></i>
+							</div>
+							<h2 class="major__title">
+								Front-end
+							</h2>
+							<div class="major__description">
+								HTML, CSS, JavaScript<br>, TypeScript, React
+							</div>
+						</div>
+						<div class="major">
+							<div class="major__icon">
+								<i class="fas fa-mobile"></i>
+							</div>
+							<h2 class="major__title">
+								Mobile
+							</h2>
+							<div class="major__description">
+								IOS, React Native, Swift
+							</div>
+						</div>
+						<div class="major">
+							<div class="major__icon">
+								<i class="fas fa-server"></i>
+							</div>
+							<h2 class="major__title">
+								Back-end
+							</h2>
+							<div class="major__description">
+								Node.js, Rest APIs
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="major">
-					<div class="major__icon">
-						<i class="fas fa-mobile"></i>
-					</div>
-					<h2 class="major__title">
-						Mobile
-					</h2>
-					<div class="major__description">
-						IOS, React Native, Swift
-					</div>
-				</div>
+			
+				<div class="about__intro">
 
-				<div class="major">
-					<div class="major__icon">
-						<i class="fas fa-server"></i>
-					</div>
-					<h2 class="major__title">
-						Back-end
-					</h2>
-					<div class="major__description">
-						Node.js, Rest APIs
-					</div>
 				</div>
-
-				<!-- 학교 및 어느 회사 다녔는지 -->
+				<i class="fas fa-arrow-right"></i>
 			</div>
 		</section>
 
@@ -119,10 +134,8 @@
 		<section id="skills" class="section">
 			<div class="section__container">
 				<h1>Skills</h1>
-				<h2>SKills && Attributes</h2>
-				<p>
-					새로운 거 배우는 것을 아주 좋아합니다.
-				</p>
+				<p> 기술의 이해도 및 사용할 수 있는 기술들 입니다. </p>
+				
 
 				<div class="skillset">
 					<div class="skillset__left">
@@ -134,7 +147,7 @@
 								<span>90%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:90%;"></div>
+								<div class="skill__value" data-width="90"></div>
 							</div>
 						</div>
 
@@ -144,7 +157,7 @@
 								<span>80%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:80%;"></div>
+								<div class="skill__value" data-width="80"></div>
 							</div>
 						</div>
 
@@ -154,7 +167,7 @@
 								<span>85%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:85%;"></div>
+								<div class="skill__value" data-width="85"></div>
 							</div>
 						</div>
 
@@ -164,7 +177,7 @@
 								<span>50%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:50%;"></div>
+								<div class="skill__value" data-width="50"></div>
 							</div>
 						</div>
 
@@ -174,7 +187,7 @@
 								<span>10%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:10%;"></div>
+								<div class="skill__value" data-width="10"></div>
 							</div>
 						</div>
 
@@ -184,7 +197,7 @@
 								<span>80%</span>
 							</div>
 							<div class="skill__bar">
-								<div class="skill__value" style="width:80%;"></div>
+								<div class="skill__value" data-width="80"></div>
 							</div>
 						</div>
 

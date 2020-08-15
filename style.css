@@ -5,7 +5,7 @@
     --color-dark-white : #bdbdbd;
 
     --color-green : #00cc00;
-    --color-light-green : #99ff99;
+    --color-light-green : #e6ffcc;
     --color-dark-green :#00b300;
 
     --color-dark-grey : #4d4d4d;
@@ -47,4 +47,12 @@
     background-color: var(--color-green);
     border-radius: var(--size-border-redius);
     opacity: 0;
+}
+
+@media screen and (max-width : 768px) {
+    :root{
+        --font-large : 32px;
+        --font-medium : 22px;
+        --font-regular : 16px;
+    }
 }

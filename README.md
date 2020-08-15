@@ -22,10 +22,10 @@ HTML, CSS, 바닐라js을 이용해 내 블로그와 포트폴리오를 만들�
 <br>
 
 ## 남은 예상 작업들
-- navbar - 모바일환경 메뉴바 애니메이션 적용
-- home - 내 사진 위치 / 배경 손보기
-- about - fade-in,fade-out 적용해 소개,경력,취미 번갈아 보여주기
-- skill - scroll 도착시, 기술 레벨에 애니메이션 추가 / 배치 변경
+- <s>home - 내 사진 위치 / 배경 손보기</s>
+- <s>skill - scroll 도착시, 기술 레벨에 애니메이션 추가</s> 
+- about - fade-in,fade-out 적용해 소개,경력,취미 번갈아 보여주기 - ing
+- skill - 배치 변경
 - project - 모바일 환경으로 버튼 최적화 / 프로젝트 추가
 - contact - stylesheet 변경
 - 전체적인 코드 리펙토링
@@ -57,3 +57,10 @@ HTML, CSS, 바닐라js을 이용해 내 블로그와 포트폴리오를 만들�
 
 - 2020년 8월 12일
     - CSS, js 및 기본 반응형 완성
+
+<br>
+
+- 2020년 8월 15일
+    - Home 배경 및 배치 변경
+    - Skills %에 애니메이션 추가
+    

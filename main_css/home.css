@@ -1,10 +1,21 @@
 @import url("../style.css");
 
 #home {
-    background: url('../images/back.png') center/cover no-repeat;
-    padding: 40px;
-    padding-top: 120px;
+    background: url('../images/background.jpg') center/cover no-repeat;
     text-align: center;
+}
+
+.home__back {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+    padding-top: 120px;
+    background-color: rgba(0,0,0,0.5);   
+}
+
+.home__contents{
+    transform: translateY(123px);
 }
 
 .home__avatar {
@@ -12,6 +23,7 @@
     height : 250px;
     border-radius: 50%;
     border: 2px solid var(--clolor-light-white);   
+    
 }
 
 .home__title,
@@ -27,4 +39,17 @@
     border : 2px solid var(--color-white);
     border-radius: var(--size-border-redius);
     color : var(--color-white);
+}
+
+@media screen and (max-width : 768px) {
+    #home {
+        background: url('../images/background.jpg') left/cover no-repeat;
+    }
+    .home__contents{
+        transform: translateY(73px);
+    }
+    .home__avatar {
+        width: 150px;
+        height : 150px;   
+    }
 }
