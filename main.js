@@ -135,7 +135,28 @@ document.addEventListener('scroll', () => {
 //---------------------------------------------------------
 
 /*
-    About 방향 조절해 보이는 화면 조절
-    
+    About 클릭 한 점(index)와 맞는 화면 보여주기
 */
 
+const major_select = document.querySelectorAll('.major__select');
+const about_intro = document.querySelectorAll('.about__intro');
+const major_next = document.querySelector('.major__next');
+
+major_next.addEventListener('click', (e) => {
+    const now_intro = document.querySelector('.about__intro.active');
+    const now_select = document.querySelector('.major__select.active');
+
+    const target = e.target;
+    const numlink = target.dataset.numlink;
+
+    if (target === major_next) return;
+    if (target.classList.contains('active')) return;
+    
+    now_intro.classList.remove('active');
+    now_select.classList.remove('active');
+    target.classList.add('active');
+    setTimeout(() => {
+        about_intro[parseInt(numlink)].classList.add('active');
+    },500);
+
+})
